@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Raleway';
+    src: url('fontes/Raleway-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #15171E;
+    color: #d6d6d2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 1.58em;
+   }
+
+h1#principal {
+    color:#f37a29e0
+}
+
+.primeiro {
+    color:#f1ff2c
+}
+
+.segundo {
+    color: #3574fd;
+}
+
+h2.primeiro {
+    color:#7efd35
+}
+
+h2.segundo {
+    color: #a335fd;
+}
+
+.span1 {
+    color: #f71c1c;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: #d6d6d2
+}
+
+p {
+    text-align: justify;
+}
+

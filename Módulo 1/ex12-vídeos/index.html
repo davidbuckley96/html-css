@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Sobre Vídeos</h1>
+    <p>Um bom site para vídeos e fotos sem direitos autorais é o PEXELS.COM</p>
+    <p>Um EXCELENTE programa transcoder de formatos de vídeo é o HANDBRAKE</p>
+    <p>Para vídeos, existem os seguintes formatos que são compatíveis com navegadores: MP4 (.mp4 e m4v), WEBM (.webm) e OGG (.ogv {com v, em vez de g})</p>
+    <p>É importante ter vários formatos de arquivo na pasta de mídia do site, pois pode ser que o usuário visite o site em um navegador incompatível com alguns formatos de vídeo que você tenha</p>
+    <h1>Inserindo vídeos <em>hospedados localmente</em></h1>
+    <p>Este vídeo está hospedado em meu próprio servidor</p>
+    <video src="midia/Meu-Video.mp4" height="350" controls></video>
+    <p>Neste caso, apenas um arquivo será executado, o que não resolve o problema de incompatibilidade com outros formatos de arquivos por cada navegador. O código para isso é este:</p>
+<pre>
+<code>&lt;video src="midia/Meu-Video.mp4" height="350" controls&gt;&lt;/video&gt;</code>
+</pre>
+    <p>Para resolver o problema, basta criar uma tag &lt;video&gt; &lt;/video&gt;, como fizemos com os vários formatos de áudio.</p>
+    <video poster = "imagens/thumb.jpg" height = "400" width = "350" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.m4v" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com a reprodução deste vídeo</p>
+    </video>
+    <pre>
+        <code>
+&lt;video poster = "imagens/thumb.jpg" height = "400" width = "350" controls&gt;
+&lt;source src="midia/meu-video.mp4" type="video/mp4"&gt;
+&lt;source src="midia/Meu-Video.m4v" type="video/mp4"&gt;
+&lt;source src="midia/video-ficticio.webm" type="video/webm"&gt;
+&lt;source src="midia/video-ficticio.ogv" type="video/ogg"&gt;
+&lt;p&gt;Seu navegador não tem compatibilidade com a reprodução deste vídeo&lt;/p&gt;
+&lt;/video&gt;
+        </code>
+    </pre>
+    <p>OBS: Se a thumb tiver dimensões diferentes da do vídeo, mas você na tag &lt;video&gt; adicionar ambos height e width, as novas dimensões irão ser aplicadas em ambos imagem e vídeo! (passei meia hora tentando resolver isso com a iolanda...)</p>
+
+    <h1>Incorporando vídeos do YouTube</h1>
+    <p>Basta ir ao vídeo desejado, selecionar "compartilhar", "incorporar" e copiar o código HTML. Após copiar, basta colar como ele está, e pronto. Não é preciso estar dentro de tags de vídeo, nem nada. É possível mudar as dimensões. Para fazer a inserção de vídeos do Vimeo, o processo é o mesmo, e no vimeo não há sugestão de outros vídeos ao pausar. No Youtube, os vídeos são livres para todos verem, e no Vimeo você pode colocar apenas para pagantes terem acessos ao conteúdo, por exemplo. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TLsAWJQlFKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS local/interno</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px; 
+        }
+        h1{
+            color: darkblue;
+            background-color: red;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <p><code>
+        Para fazer o css local, basta criar uma tag &lt;style&gt; &lt;/style&gt; abaixo da tag &lt;title&gt; &lt;/title&gt;. Dentro da tag style, usa-se o seletor desejado (sem colchetes angulares), seguido de colchetes. Fica desta forma:
+    </code></p>
+    <pre>
+<p><code>
+body{
+    background-color: lightsteelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+}
+h1{
+    color: darkblue;
+    background-color: red;
+}
+h2{
+    color: darkred;
+}
+p{
+    text-align: justify;
+}
+</code></p>
+    </pre>
+    <h2>Capítulo 1.1</h2>
+    <p><code>
+        Esta técnica tem duas desvantagens: primeiramente, o estilo ocupa muitas linhas de código, e fica um código visualmente muito grande para uma página com conteúdo pequeno, e isso não é o mais agradável de se ver; além disso, caso seja necessário fazer esse tipo de estilos em dezenas de outras páginas, vai ser necessário copiar todo o código css e colar em todas as dezenas de arquivos html diferentes, o que torna igualmente inviável a manutenção de todos os arquivos html caso seja necessário alterar algum elemento CSS e este esteja local/interno. 
+    </code></p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laboriosam voluptate? Ullam eum quas aliquam qui modi est praesentium amet iste obcaecati aut natus corrupti, similique labore voluptatum nam! Quam?</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita enim, sunt, quidem soluta qui laborum accusamus saepe nam molestias quia consequatur commodi ut aliquam excepturi magnam temporibus quos laudantium officia.</p>
+</body>
+</html>

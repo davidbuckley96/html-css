@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Raleway';
+    src: url('fontes/Raleway-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #15171E;
+    color: #d6d6d2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 1.58em;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: #d6d6d2
+}
+
+p {
+    text-align: justify;
+}
+
+p#identado {
+    text-indent: 30px;
+}

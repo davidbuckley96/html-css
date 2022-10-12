@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>O modelo de caixas em HTML5</h1>
+    <p>A caixa, no HTML, é todo elemento <em><strong>visível</strong></em> no site. O &lt;h1&gt; (e outros títulos), por exemplo, é uma caixa, bem como parágrafos, imagens, vídeos, áudios (com o respectivo painel)...</p>
+    <p>Ao adicionar um seletor a um elemento HTML, nada mais fazemos do que estilizar a caixa que exibirá esses elementos</p>
+    <p><strong>As caixas têm tamanho</strong>, e uma delas é a <strong>height</strong> (altura), a <strong>width</strong> (largura).</p>
+    <h2>Border</h2>
+    <p><strong>As caixas também têm também uma border</strong> (borda), que circunda a mesma, e essa borda pode ser afastada, aproximada, aumentada, espessada...</p>
+    <h2>Padding</h2>
+    <p><strong>O espaço criado entre a borda e o conteúdo da caixa</strong> (por exemplo ao afastar uma borda do conteúdo), <strong>é chamado de padding</strong>. <strong>O padding pode ser calculado e alterado</strong>, sendo possível editar o padding do topo, de baixo, da esquerda, direita... </p>
+    <h2>Margin</h2>
+    <p>As caixas em linhas acima/abaixo, por sua natureza, são exibidas com suas borders praticamente coladas, sem espaçamento entre si. <strong>É possível adicionar um espaçamento externo</strong> que distancie as caixas na página <strong>por meio de uma margin</strong>, tornando o conteúdo menos grudado um no outro.</p>
+    <h2>Outline</h2>
+    <p>As caixas são encobertas por borders (visíveis ou não), e <strong>também é possível adicionar um segundo tipo de contorno que vai por fora da border, chamado de outline</strong> (igual à border, <strong>mas colado na margem externa da border</strong>).</p>
+    <h1>Tipos de caixa</h1>
+    <p><strong>Existem dois tipos de caixa. O primeiro é o box-level, e o segundo é o inline-level</strong></p>
+    <h2>Box-level</h2>
+    <p>Se uma página contém um texto como &lt;p&gt; (que é uma caixa) que ocupe apenas metade do tamanho de uma linha da página, e desejamos adicionar uma imagem (outra caixa) que seja do tipo box-level após o texto, <strong>a segunda caixa box-level irá fazer uma quebra de linha e será exibida no começo da linha seguinte à da primeira.</strong> Do mesmo modo, após uma caixa box-level, <strong>a caixa seguinte será exibida com uma quebra de linha em relação à da caixa box-level, uma linha abaixo.</strong></p>
+    <p><strong>OBS.: caixas do tipo box-level ocupam toda a linha de uma página, ocupando assim 100% da viewport do navegador. Caso a janela esteja muito grande, irá ocupar a largura total da página (width maior), e se a janela for menor, ainda ocupará os mesmos 100%, mas com um width menor).</strong></p>
+    <h2>Inline-level</h2>
+    <p>Se a mesma página do exemplo anterior tiver uma imagem que desta vez seja inline-level, <strong>o parágrafo irá terminar no meio da página, a imagem será exibida na mesma linha do parágrafo, após o fim do mesmo, e uma nova caixa de outro parágrafo continuará logo após a imagem, sem haver quebra alguma de linha.</strong></p>
+    <p><strong>OBS.: caixas inline-level não ocupam 100% da viewport do navegador, não ocupam toda a width da linha.</strong></p>
+    <h2>Exemplos de tipos de caixas</h2>
+    <p>Box-level</p>
+    <ul>
+        <li>div</li>
+        <li>h1-h6</li>
+        <li>p</li>
+        <li>main</li>
+        <li>header</li>
+        <li>nav</li>
+        <li>article</li>
+        <li>aside</li>
+        <li>footer</li>
+        <li>form</li>
+        <li>video</li>
+    </ul>
+    <p>Inline-level</p>
+    <ul>
+        <li>span</li>
+        <li>a</li>
+        <li>code</li>
+        <li>small</li>
+        <li>strong</li>
+        <li>em</li>
+        <li>&lt;sup&gt; e &lt;sub&gt;</li>
+        <li>label</li>
+        <li>button</li>
+        <li>input</li>
+        <li>select</li>
+    </ul>
+</body>
+</html>

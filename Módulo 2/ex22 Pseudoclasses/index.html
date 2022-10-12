@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class = "d1">
+        <h1>Div 1</h1>
+        <p class="x">Esta é a div 1</p>
+    </div>
+    <div class = "d2">
+        <h1>Div 2</h1>
+        <p class="x">Esta é a div 2</p>
+    </div>
+    <div class = "d3">
+        <h1>Div 3</h1>
+        <p class="x"></p>Esta é a div 3</p>
+    </div>
+    <div class="d4">
+        <h1>Div 4</h1>
+        <div class="escondido">
+            <span class="span1">Passe o mouse aqui</span>
+            <p>Texto escondido!</p>
+        </div>
+    </div>
+    <p>Em CSS as classes são referenciadas com um ponto ( . ) e os id são referenciados com hashtag ( # ). Já as pseudoclasses, essas são referenciadas com dois pontos ( : )</p>
+    <p>As pseudoclasses têm a ver com o estado do elemento (se está ativo, marcado, vazio, habilitado...)</p>
+    <h1>Hover</h1>
+    <p>O Hover é uma pseudoclasse que torna-se ativa ao passar o mouse em cima do elemento em questão. É possível, por exemplo, mudar a cor dos quadros ao passar o mouse em cima devido ao hover com background-color</p>
+    <p>Para aplicar a pseudoclasse hover em um elemento, usa-se a seguinte semântica:</p>
+    <code>div:hover {background-color: yellow;
+    }</code>
+
+    <h2>Elementos Filhos ( > )</h2>
+    <p>No caso da div 4, existe uma div como as demais, mas que dentro dela há um texto escondido que só é revelado ao passar o mouse em cima. Para fazer esse exemplo, foi criada dentro da div 4 uma nova div chamada "escondido" <code>&lt;div class-"escondido"&gt;</code>. </p>
+    <p>Nesta div escondido, foi feito dentro um texto sem parágrafo (textos dentro de divs aparecem na página html sem precisar estar em um parágrafo) que dizia "Passe o mouse aqui". Este texto foi marcado com um <code>span</code>, e dentro da div <code>escondido</code> também foi feito um parágrafo escrito "texto escondido!"</p>
+    <p>No arquivo CSS, para esconder o texto secreto, usou-se a propriedade <code>display: none</code> no .<code>escondido > p</code></p>
+    <p>Isso quer dizer que o parágrafo <code>p</code> que está dentro da classe <code>.escondido</code>, ou seja, o <code>p</code> filho de <code>.escondido</code>, não terá display algum.</p>
+    <p>No arquivo CSS, para que o texto escondido aparecesse ao colocar o mouse em cima, usou-se: <code> div.hover > p {display:block}</code>, para então o display deixar de ser <code>none</code> e passar a ser visível com o <code>block</code>.</p>
+    <p>Entretanto, o texto surgia e o texto "passe o mouse aqui" continuava visível. Para resolver este problema, foi utilizado o span marcado com a classe <code>.span1</code>, onde esta passava a ter seu <code>display:none</code>. Como o código lê na ordem em que é escrito, primeiro ele revela o texto do <code>.span1</code>, depois o hover revela o texto do <code>.escondido</code>, ao mesmo tempo em que some com o display do <code>.span1</code>. Caso a ordem fosse contrária, e o <code>span1</code> estivesse antes no código, a <code>div 4 </code>ficaria vazia, com o texto escondido e o display do "passe o mouse aqui" como <code>none</code>.</p>
+   </body>
+</html>

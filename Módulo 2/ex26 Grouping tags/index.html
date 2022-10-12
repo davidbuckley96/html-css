@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            display: flex;
+            gap: 1em;
+        }
+        nav > a {
+            color: white;
+        }
+
+        .amarelo {
+            background-color: rgb(165, 165, 1);
+            padding-bottom: 1em;
+
+        }
+        .verde {
+            margin-top: -19px;
+            background-color: green;
+            padding-bottom: 1em;
+        }
+        .roxo {
+            background-color: blueviolet;
+            margin-top: -23px;
+            padding-bottom: 1em;
+        }
+        .azul {
+            background-color: rgb(7, 87, 192);
+            margin-top: -20px;
+            padding-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header class="amarelo">
+        <p>Header tem a cor amarela</p>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <div class="verde">
+            <section id="assuntos">
+                <p>Section tem a cor verde</p>
+            </section>
+            <section id="noticias">
+                    <p>Aside</p>
+                        <aside>
+                            <h2>Exemplo de título de aside dentro de article dentro de section</h2>
+                            <p>Texto do parágrafo dentro da aside dentro do article dentro da section "notícias"</p>
+                        </aside>
+            </section>
+        </div>
+        <article class="roxo">
+            <p>Article tem a cor roxa</p>
+            <h2>Tags de agrupamento</h2>
+            <p>As tags de agrupamento sempre foram duas: <strong>div e span</strong>, sendo a div uma block-level, e o span uma inline-level</p>
+            <p>Existem também as tags semânticas de divisão de conteúdo, que é o <strong>cabeçalho, o conteúdo principal e o rodapé</strong></p>
+            <h2>Header</h2>
+            <p>É onde fica localizado o conteúdo do cabeçalho, como um menu com links de navegação, por exemplo.</p>
+            <h2>Main</h2>
+            <p>É onde fica o conteúdo principal da sua página</p>
+            <h2>Footer</h2>
+            <p>É onde fica o conteúdo de rodapé. Pode ser uma imagem, links (que não precisam estar dentro de uma nav), texto, assinatura etc.</p>
+        </article>
+    </main>
+    <footer class="azul">
+        <p>Footer tem a cor azul</p>
+        <p>Este é o footer. Desenvolvido pelo David. Aqui poderia ter links, logotipos, endereços etc.</p>
+    </footer>

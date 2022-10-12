@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5EBD6;
+}
+h1 {
+font-family: 'Bebas Neue', cursive;
+}
+h2, h3, h4 {
+    font-family: 'idroid',sans-serif;
+
+}
+header {
+    background: linear-gradient(to bottom, #2EA765 0% ,#063D1F 100%);
+    text-align: center;
+    color: white;
+    padding-top: 2.4em;
+    height: 256px;
+    box-shadow: 0px 2px 7.3px 5px rgb(0 0 0 / 33%);
+}
+h1 {
+    padding-bottom: 0.6em;
+    padding-top: 0.03em;
+    font-size: 3em;
+    text-shadow: 1px 1px 1.3px black;
+    font-weight: 100;
+    margin-bottom: -0.2em;
+}
+header > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.21em;
+    font-weight: 100;
+    margin-bottom: 1em;
+    display: inline-block;
+    width: 33%;
+    text-shadow: 1px 1px 1.3px black;
+}
+nav > ul {
+    text-align: left;
+    padding-top: 2.6em;
+}
+nav > ul > li {
+    display: inline;
+    list-style-type: none;
+    margin-top: 2.6em;
+    margin-left: 1.27em;
+}
+nav > ul> li> a {
+    display: inline;
+    text-decoration: none;
+    color: #83E0AD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+h2 {
+    font-size: 1.8em;
+    color: #063D1F;
+    font-weight: 300;
+}
+h3 {
+    color: #096532;
+    background-image: linear-gradient(to left, #FFFFFF 0%, #83E0AD 100%);
+    padding-left: 0.4em;
+    font-weight: 400;
+    font-size: 1.3em;
+
+}
+main > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    text-indent: 1.9em;
+    padding-top: 1.1em;
+    padding-bottom: 1em;
+}
+main > p > a {
+    text-decoration: none;
+    display: inline;
+    color:#063D1F;
+    font-weight: bold;
+    background-color: #83E0AD;
+    padding-left: 0.4em;
+    padding-right: 0.3em;
+}
+main > p > strong {
+    color: #063D1F;
+}
+main {
+    text-align: justify;
+    width: 67.7%;
+    margin: auto;
+    padding-left: 1.26em;
+    padding-right: 1.26em;
+    padding-top: 1.26em;
+    background-color: white;
+    align-self: center;
+    box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 34%);
+}
+.mascotes {
+    width: 100%;
+}
+.irina {
+    width: 100%;
+}
+.bugdroid {
+    display: flex;
+    margin: auto;
+}
+.versoes {
+    list-style-type: none;
+}
+.video {
+    border-left: 45px solid #063D1F;
+    border-right: 45px solid #063D1F;
+    border-top: 30px solid #063D1F;
+    border-bottom: 30px solid #063D1F;
+    width: 100%;
+}

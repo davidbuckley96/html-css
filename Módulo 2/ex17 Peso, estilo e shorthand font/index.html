@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso, estilo e shorthand font</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Tamanho de fontes</h2>
+    <p>Pode ser definido com base em medidas absolutas ou relativas. As medidas absolutas são centímetro (cm), milímetro (mm), polegadas (in), <strong>píxels (px)</strong>, pontos e picas (pc). A apresentação do tamanho da fonte de medidas absolutas em diferentes tamanhos de tela pode ser diferente também.</p>
+<pre>
+<p><code>
+Absolutas:
+cm, mm, in, <strong>px</strong>, pt, pc
+
+Relativas:
+<strong>em</strong>, ex, rem, vw, vh, %
+</code></p>
+</pre>
+    <p>As medidas relativas são o <strong>em (tamanho relativo ao tamanho atual da fonte)</strong>, ex (relativo à altura x de uma fonte), rem (relativo ao root, a fonte que está no body), vw (view width, o tamanho relativo ao tamanho de tela do usuário, tamanho da view port, em porcentagem), vh (view height, que é a altura relativa ao tamanho da tela do usuário, tamanho da view port, em porcentagem), e também % (porcentagem).</p>
+    <p>A W3C recomenda utilizar <strong>apenas em e px</strong> para quaisquer tamanhos de fonte em sites.</p>
+    <p>Como a maioria dos navegadores têm tamanho de fonte padrão de 16px, isso quer dizer que <strong>1em geralmente equivale a 16px</strong>. Diz-se "geralmente", pois se o tamanho padrão da fonte for 18px, por exemplo, nesse caso 1em será igual a 18px.</p>
+    <h2>Peso da fonte</h2>
+    <p>Para determinar o peso de uma fonte, é preciso utilizar uma fonte diferente, pois as fontes comuns que têm no computador geralmente só têm "normal" e "bold", e, no fim, não dão muita opção de estilo</p>
+    <p>Para isso, <strong>utiliza-se a fonte <code>'Work Sans'</code></strong> antes das fontes da font-family. Fica assim:</p>
+<pre>
+<p><strong>
+    <code>
+body {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+OBS: É PRECISO IMPORTAR A FONTE WORK SANS DA URL!
+    </code>
+</strong></p>
+</pre>
+    <p>Para determinar o peso da fonte, <strong>utiliza-se a expressão <code>font-weight:</code></strong></p>
+    <p>Os font-weight disponíveis são <strong><em>lighter, normal, bold e bolder</em></strong> (a work sans tem todas essas opções</p>
+    <P>Outra opção de font-weight é a numérica, <strong>onde os valores começam em 100 e vão até 900, do mais leve ao mais negrito</strong></P>
+    <p>OBS.: Os valores são apenas em centenas. Não é possível colocar 150, 543 ou 550, nem nada assim, e sim apenas 100, 200, 300, 400, 500, 600, 700, 800 e 900.
+    OBS. 2: Os valores não são em nenhuma medida (px, cm, pt...), é apenas o número sem medida</p>
+
+    <h2>Estilo da fonte</h2>
+    <p>É possível adicionar <code>font-style: italic</code>, o que faz com que o título no h1, que por padrão já vem bold, seja também itálico (mas nem todas as fontes permitem essa combinação)</p>
+    <p>É possível também adicionar <code>text-decoration: underline</code>, para que o texto tenha sublinhado, itálico e bold (mas nem todas as fontes permitem todas essas combinações)</p>
+    <p>No geral, configurações extremamente comuns no dia a dia são <strong>
+<pre>
+<code>
+h1 {
+    font-family: ...;
+    font-weight: ...;
+    font-size: ...;
+    font-style: ...;
+}
+</code>
+</pre>
+    </strong></p>
+    <h2>Shorthand Font</h2>
+    <p>Entretanto, como essas linhas de código são extensas, é possível agregar todas em uma shorthand font. A ordem é:
+<pre>
+<strong>
+<code>
+1º font-style -> 2º font-weight -> 3º font-size -> 4º font-family
+</code>
+</strong>
+</pre>
+    </p>
+    <p>O código em shorthand font, fica desta maneira:</p>
+<pre>
+<strong>
+<code>
+font: italic bolder 3em 'Work Sans', sans-serif;
+</code>
+</strong>
+</pre>
+</body>
+</html>

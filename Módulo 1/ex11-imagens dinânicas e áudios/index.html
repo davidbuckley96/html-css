@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <h2>Resumo</h2>
+        <code>
+            &lt;picture&gt;
+                &lt;source media="(max-width: {dimensão da imagem +50px})" srcset="{local do arquivo de imagem}" type="image/{tipo de imagem, como png}"
+        </code>
+    <p>Começar pela imagem maior, e ir escrevendo novos tamanhos de imagem cada vez menores na linha de códgo acima</p>
+    <p>O código ficou:</p>
+<pre><code>    
+&lt;picture&gt;
+&lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;
+&lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+&lt;img src="imagens/foto-g.png" alt="imagem flexível"&gt;
+&lt;/picture&gt;
+</code>
+</pre>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível"> 
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <code>
+        &lt;audio src="midia/higher-octane.mp3" controls autoplay &gt;&lt;/audio&gt;
+    </code>
+    <p>Deste modo, o nosso áudio será reproduzido automaticamente ao carregar a página</p>
+    <audio src="midia/higher-octane.mp3" controls></audio>
+    <p>Existe uma outra maneira de se adicionar áudios tocando automaticamente:</p>
+    <pre>
+    <code>
+&lt;audio preload="auto" autoplay controls loop&gt;
+&lt;source src="midia/interplanetary-alignment.mp3" type="audio/mpeg"&gt;
+&lt;source src="midia/audio-ficticio.ogg" type="audio/ogg"&gt;
+&lt;source src="midia/audio-ficticio.wav" type="audio/wav"&gt;
+&lt;p&gt;Infelizmente seu navegador falhou em executar o áudio. Pode baixá-lo &lt;a href="https://www.youtube.com/watch?v=NzishIREebw"&gt;neste link&lt;/a&gt;&lt;/p&gt;
+&lt;/audio&gt;
+    </code>
+    </pre>
+    <audio preload="metadata" controls>
+        <source src="midia/interplanetary-alignment.mp3" type="audio/mpeg">
+        <source src="midia/audio-ficticio.ogg" type="audio/ogg">
+        <source src="midia/audio-ficticio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador falhou em executar o áudio. Pode baixá-lo <a href="https://www.youtube.com/watch?v=NzishIREebw">neste link</a></p>
+    </audio>
+    <p>Neste caso, o preload metadata fará com que as informações do áudio sejam carregadas, mas o áudio não será baixado. Se for "auto", o site só terminará de carregar ao baixar todo o áudio, o que aumenta o consumo de banda do site. Se for none, não carregará informação de duração ou nada, a não ser que o usuário clique para baixar, o que também não é ideal por não informar duração.</p>
+    <p>O "controls" serve para que a barra de áudio seja visível e que o usuário possa dar play e pausar quando quiser.</p>
+    <p>O "loop" faz com que o áudio seja recomeçado ao chegar no fim, como se fosse a música de fundo de um site</p>
+    <p>OBS: O formato .wav é EXTREMAMENTE PESADO e lento, e deve ser evitado a todo custo, pois só prejudicará o site!</p>
+    <br><br>
+    
+</body>
+</html>

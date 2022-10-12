@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            display: block;
+            gap: 1em;
+            box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.658);
+        }
+        nav > a {
+            color: white;
+        }
+
+        .amarelo > p {
+            margin: 0;
+        }
+
+        .verde > p {
+            margin: 0;
+        }
+        .roxo > p {
+            margin: 0;
+        }
+        .azul > p {
+            margin: 0;
+        }
+        
+        .amarelo {
+            background-color: rgb(165, 165, 1);
+            padding-bottom: 2.3em;
+            padding-top: 1em;
+
+        }
+        .verde {
+            margin-top: -19px;
+            background-color: green;
+            padding-bottom: 1em;
+            padding-top: 0.5em;
+        }
+        .roxo {
+            background-color: blueviolet;
+            margin-top: -23px;
+            padding-bottom: 2.3em;
+            padding-top: 1.3em;
+        }
+        .azul {
+            background-color: rgb(7, 87, 192);
+            margin-top: -20px;
+            padding-bottom: 1.3em;
+            padding-top: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <header class="amarelo">
+        <p>Header tem a cor amarela</p>
+        <h1>Meu site</h1>
+        <p>Na sombra, o primeiro valor é o espalhamento horizontal, o segundo é o deslocamento vertical, depois vem o blur, depois o spread, depois vem a cor, e o código ainda pode ser <code>inset</code>, para que a sombra seja interna, e não externa.</p>
+        <p>É possível ir no dev tools <strong>(APÓS CRIAR UMA BOX-SHADOW QUALQUER!)</strong>, no elemento selecionado, e clicar no símbolo de duas caixas sobrepostas na linha de código da box shadow do console de elementos do dev tools. Assim, será possível escolher e modificar a box shadow do jeito que ficar melhor, depois basta copiar e colar no código CSS. </p>
+        <p>As sombras devem ser pretas, de preferência, e reduzir a sua <strong>transparência para ficar mais fraca</strong>, pois não existe sombra colorida na vida real</p>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <div class="verde">
+            <section id="assuntos">
+                <p>Section tem a cor verde</p>
+            </section>
+            <section id="noticias">
+                    <p>Aside</p>
+                        <aside>
+                            <h2>Exemplo de título de aside dentro de article dentro de section</h2>
+                            <p>Texto do parágrafo dentro da aside dentro do article dentro da section "notícias"</p>
+                        </aside>
+            </section>
+        </div>
+        <article class="roxo">
+            <p>Article tem a cor roxa</p>
+            <h2>Tags de agrupamento</h2>
+            <p>As tags de agrupamento sempre foram duas: <strong>div e span</strong>, sendo a div uma block-level, e o span uma inline-level</p>
+            <p>Existem também as tags semânticas de divisão de conteúdo, que é o <strong>cabeçalho, o conteúdo principal e o rodapé</strong></p>
+            <h2>Header</h2>
+            <p>É onde fica localizado o conteúdo do cabeçalho, como um menu com links de navegação, por exemplo.</p>
+            <h2>Main</h2>
+            <p>É onde fica o conteúdo principal da sua página</p>
+            <h2>Footer</h2>
+            <p>É onde fica o conteúdo de rodapé. Pode ser uma imagem, links (que não precisam estar dentro de uma nav), texto, assinatura etc.</p>
+        </article>
+    </main>
+    <footer class="azul">
+        <p>Footer tem a cor azul</p>
+        <p>Este é o footer. Desenvolvido pelo David. Aqui poderia ter links, logotipos, endereços etc.</p>
+    </footer>

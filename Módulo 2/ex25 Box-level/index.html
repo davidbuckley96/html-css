@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-level</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        h1 {
+            height: 73px;
+            width: 253px;
+            background-color: tomato;
+            text-align: center;
+
+            border-width: 10px;
+            border-color: green;
+            border-style: solid;
+            border: 10px solid green;
+            
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding: 30px;
+
+
+            margin: auto;
+            margin-top: 150px;
+            margin-bottom: 70px;
+            margin: 150px auto 150px auto;
+
+
+            outline-width: 3px;
+            outline-style: dotted;
+            outline-color: aqua;
+            outline-offset: 50px;
+            outline: 3px dotted aqua;
+        }
+        a {
+            border-width: 2.2px;
+            border-color: rgb(202, 241, 28);
+            border-style: solid;
+            
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 1px;
+            padding-right: 1px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exemplo de caixa box-level</h1>
+    </div>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <p><strong>OBS.: apesar de o &lt;a&gt; ser uma caixa inline-level, ela também pode ter border, margin, padding e outline definidos! Neste caso, foi dada uma borda amarela com padding de 1px só para ilustrar que é possível fazer isso em todas as boxes.</strong></p>
+    <p>Neste caso, a <strong>caixa de conteúdo</strong> deixou de ocupar toda a viewport pois o width foi manualmente alterado para 73px. <strong>a caixa de conteúdo é a cor salmão</strong></p>
+    <p><strong>A border é a caixa verde</strong>, e tem uma característica de <code>border-width 10px; border-color: green; border-style: solid;</code>, para ficar bem visível</p>
+    <p><strong>o padding adiciona um espaçamento entre o texto e a linha verde da border, mas não aumenta o tamanho da caixa de conteúdo</strong>, como pode parecer. O motivo disso é que <strong>não é possível adicionar cor ao padding</strong>, ele apenas afasta a borda do conteúdo</p>
+    <p><strong>O margin adicionou um espaçamento no h1 para cima, baixo e esquerda (direita não foi necessário pois já está longe o suficiente da borda da direita</strong></p>
+    <p>Caso queira centralizar no meio, <strong><em>NÃO DEVE USAR MARGIN À ESQUERDA!</em>, basta usar o seguinte código: <code>margin: auto</code>. Este código centraliza a margem para o meio da tela, independentemente do tamanho da viewport do usuário</strong></p>
+    <p><strong>O outline é o pontilhado azul em volta da border, e é possível distanciá-la da border ao usar o código <code>outline-offset: 50px;</code>, com os pixels desejados.</strong></p>
+    <br>
+    <h2>Simplificando os códigos</h2>
+    <p><strong>SHORTHAND DE BORDER:</strong></p>
+    <p>Para border, deve ser nesta ordem: <strong>largura -> estilo -> cor</strong>, ou seja, ficaria:</p>
+    <code>border: 10px solid black;</code>
+    <br><br><br>
+    <p><strong>SHORTHAND DE PADDING:</strong></p>
+    <p>Para padding, deve ser nesta ordem: <strong>topo -> direita -> baixo -> esquerda</strong>, como em um relógio, ou seja, ficaria:</p>
+    <code>padding: 10px 5px 10px 5px;</code>
+    <p><strong>OBS.: SE AS DISTÂNCIAS DE PADDING FOREM TODAS IGUAIS (10px, 10px, 10px e 10px, por exemplo), PODEMOS APENAS DIZER: <code>padding: 10px;</code></strong></p>
+    <p><strong>OBS.2: SE USAR APENAS DOIS VALORES PARA O PADDING POR EXEMPLO, <code>padding: 10px 20px;</code>, ISSO FARÁ COM QUE O PADDING DE CIMA E BAIXO SEJA 10px, E O DA DIREITA E ESQUERDA SEJA DE 20px.</strong></p>
+    <br><br>
+    <p><strong>SHORTHAND DE MARGIN</strong></p>
+    <p>Para margin, deve ser nesta ordem: <strong>topo -> direita -> baixo -> esquerda</strong>, igual ao padding, <strong>lembrando que os valores podem ser substituidos por <code>"auto"</code></strong></p>
+    <br><br>
+    <p><strong>SHORTHAND DE OUTLINE</strong></p>
+    <p>Para outline, usa-se nesta ordem: <strong>largura -> estilo -> cor</strong>. Desta maneira, ficaria assim:</p>
+    <code>outline: 5px dashed salmon;</code>
+</body>
+</html>

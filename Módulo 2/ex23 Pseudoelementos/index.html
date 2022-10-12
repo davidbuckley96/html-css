@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.dota2.com/home" target="_blank">Site Dota 2</a></li>
+        <li><a href="https://worldofwarcraft.com/pt-br/" target="_blank">Site World of Warcraft</a></li>
+        <li><a href="https://us.diablo3.blizzard.com/en-us/" target="_blank">Site Diablo 3</a></li>
+    </ul>
+    <p>O html5, por padrão, torna os links não visitados azuis, e os visitados ficam roxos. É possível sobrepor essas definições em CSS, como já foi feito neste exemplo.</p>
+    <p>Neste caso, o código é o seguinte:</p>
+<pre>
+<code>ul > li > a {
+    text-decoration: none;
+    color: #d6d6d2
+    }</code>
+</pre>
+<p>Para que o texto fique sublinhado ao passar o mouse, usa-se o seguinte código:</p>
+<pre>
+<code>ul > li> a:hover {
+    text-decoration: underline;
+    }</code>
+</pre>
+<p>Para que o texto fique diferente ao permanecer com o mouse clicado no mesmo, usa-se o seguinte código:
+<pre>
+<code>ul > li > a:active {
+    color:yellow;
+    }</code>
+</pre>
+</p>
+<h2>Pseudoclasses ( : )</h2>
+    <ul>
+        <li>Visited
+            <p>Serve para configurar o estilo de links visitados</p>
+        </li>
+        <li>Hover
+            <p>Serve para configurar o estilo de elementos ao passar o mouse em cima dos mesmos</p>
+        </li>
+        <li>Active
+            <p>Serve para configurar o estilo de links ao permanecer com o mouse clicando nos mesmos</p>
+        </li>
+    </ul>
+<h2>Pseudoelementos ( : : )</h2>
+<p>Pseudoelementos têm impacto no conteúdo dos elementos</p>
+<p>Por exemplo, se desejar adicionar após cada link um texto dizendo que é um link, é possível fazer o mesmo com um pseudoelemento. Para isso, <strong>usa-se o <code>elemento + ::</code></strong></p>
+<pre>
+<code>a::after {
+    content: ' -> Este é um link!';
+    color:aqua
+    }</code>
+</pre>
+<p>Nota-se que o texto do pseudoelemento também faz parte do link, e, se for clicado, também redicionará para o site em questão!</p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas</h2>
+        <ol type = "1" start = "4">
+            <li>Acordar
+            <li>Ligar para a Iolanda
+            <li>Tomar café
+            <li>Escovar os dentes
+            <li>Estudar
+        </ol>
+        <p>Obs: a partir do HTML5, fechar a tag li tornou-se opcional, podendo apenas ter a tag de abertura, sem a /li</p>
+        <p>É possível começar uma lista a partir de um número específico com o parâmetro 'start = "(número)"'</p>
+        <p>Os tipos de OL podem ser A (alfabeto maiúsculo), a (alfabeto minúsculo), I (alfabeto romano maiúsculo), i (alfabeto romano minúsculo) e 1 (ordem numérica)</p>
+        <ol type = "I">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Estudar</li>
+            <li>Trabalhar</li>
+        </ol>
+    <h2>Listas Não Ordenadas</h2>
+        <ul type = "circle">
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Molho</li>
+        </ul>
+        <p>Nas UL, tem como alterar o tipo para disc (bolas pretas), circle (bolas brancas) e square (quadrados)</p>
+    <h2>Juntando listas</h2>
+        <ol>
+            <li>Linguagens antigas</li>
+            <ol type = "a">
+                <li>Clipper</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Linguagens novas</li>
+            <ol type = "a" start = "4">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Kotlin</li>
+            </ol>
+        </ol>
+    <h2>Meus jogos favoritos</h2>
+        <ol>
+            <li>PC</li>
+            <ul type = "square">
+                <li>Dota</li>
+                <ul type = "circle">
+                    <li>Pre 7.07</li>
+                    <li>7.07+</li>
+                </ul>
+                <li>WoW</li>
+                <li>DS1</li>
+            </ul>
+            <li>Xbox</li>
+            <ul type = "square">
+                <li>DS2</li>
+                <li>DS3</li>
+                <li>Elden Ring</li>
+            </ul>
+            <li>PS4</li>
+            <ul type = "square">
+                <li>Tomb Raider</li>
+                <li>Just Dance</li>
+                <li>PT</li>
+            </ul>
+        </ol>
+    <h2>Lista de definições</h2>
+        <dl>
+            <dt><code>(termo a ser definido)</code>Gatos</dt>
+            <dd><code>(definição do termo)</code>Animais racionais que fazem o que querem e não demonstram muito afeto, a não ser no banheiro. Costumam derrubar coisas e fazer bobagens, mas também são muito carinhosos e divertidos.</dd>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        </dl>
+        <p>Esta lista é muito usada em dicionários, encicloédias etc.</p>
+</body>
+</html>

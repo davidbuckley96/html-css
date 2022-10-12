@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 id="principal">Identificadores (id="principal" h1#principal)</h1>
+    <p>Este título é um <code>&lt;h1&gt;</code>, mas, caso eu queira ter um estilo diferenciado que o do "Primeiro título de nível 1" e do "Segundo título de nível 1", é preciso adicionar um seletor para o mesmo. Para isso, adiciona-se na tag: <code>&lt;h1 id = "principal"&gt;</code></p>
+    <p>Agora, basta ir no código CSS e referenciar o identificador utilizado para dar características diferentes. <strong>Para referenciar um identificador, utiliza-se a seguinte semântica: <code>h1#exemplo {}</code></strong></p> 
+    <p>As características de <code>&lt;h1&gt;</code> serão as mesmas para todas as tags <code>&lt;h1&gt;</code>, mas propriedades diferentes das dos restantes <code>&lt;h1&gt;</code> serão aplicadas apenas ao identificador.</p>
+    <p>Por exemplo, se tanto <code>&lt;h1&gt;</code> quanto <code>&lt;h1 id="exemplo"&gt;</code> tiverem a mesma cor de texto, então não é preciso declarar a cor para <code>&lt;h1 id="exemplo"&gt;</code>, mas, se o tamanho de texto for diferente, o tamanho declarado em <code>&lt;h1 id="exemplo"&gt;</code> irá sobrescrever o tamanho de texto dos demais <code>&lt;h1&gt;</code>, mas mantendo todas as demais propriedades que não forem diferentes.</p>
+    <p><strong>OBS.: APENAS PODE-SE TER 1 IDENTIFICADOR POR DOCUMENTO HTML! POR MAIS QUE FUNCIONE TER MAIS DE 1, ESTÁ ERRADO! PARA MAIS DE UM MARCADOR, USA-SE CLASS.</strong></p>
+    <h1 class="primeiro">Primeiro título de nível 1 (class="primeiro" .primeiro)</h1>
+    <p>Neste caso, foi utilizado um <code>&lt;h1 id="primeiro"&gt;</code>, e no arquivo CSS foi declarado que a cor de <code>.primeiro {}</code> seria amarela. Neste caso, todos os seletores genéricos .primeiro terão a mesma configuração de estilo.</p>
+    <h1 class="segundo">Segundo título de nível 1 (class="segundo" .segundo)</h1>
+    <p>Neste caso, foi utilizado um <code>&lt;h1 id="segundo"&gt;</code>, e no arquivo CSS foi declarado que a cor de .segundo {} seria azul. Neste caso, todos os seletores genéricos .segundo terão a mesma configuração de estilo.</p>
+    <h2 class="primeiro">Primeiro título de nível 2 (class=primeiro" h2.primeiro)</h2>
+    <p>Neste exemplo, a classe usada foi a mesma, mas, caso eu queira que o h2 com a classe de 'primeiro' tenha alguma coisa diferente, basta no CSS declarar <strong><code>h2.primeiro</code></strong>, em vez de apenas <strong><code>.primeiro</code></strong></p>
+    <h2 class="segundo">Segundo título de nível 2 (class="segundo" h2.segundo)</h2>
+    <p>Neste exemplo, a classe usada foi a mesma, mas, caso eu queira que o h2 com a classe de 'segundo' tenha alguma coisa diferente, basta no CSS declarar <strong><code>h2.segundo</code></strong>, em vez de apenas <strong><code>.segundo</code></strong></p>
+    <p>Neste exemplo, temos um texto dentro de um parágrafo comum, mas eu desejo que <span class = "span1">esta frase específica fique vermelha</span>. Para isso, usa-se uma tag nova chamada &lt;span&gt; &lt;/span&gt; para marcar o trecho da frase específica, e então, na tag de abertura adicionar a classe que terá a proprpiedade de cor diferente. A sintaxe é a seguinte: <code>&lt;span class = "span1"&gt;esta frase específica fique vermelha&lt;/span&gt;</code></p>
+    <p><strong>OBS.: É possível adicionar mais de uma classe a um mesmo elemento html. Para isso, basta adicionar a seguinte sintaxe:
+    <pre><code>
+    &lt;h2 class = "exemplo1 exemplo2"&gt;Título com duas classes&lt;h2&gt;
+    </code></pre>
+    Também é possível adicionar um id e uma classe juntos, mas as propriedades do id sobrepõem-se às da classe, caso sejam conflitantes.
+    </strong></p>
+</body>
+</html>

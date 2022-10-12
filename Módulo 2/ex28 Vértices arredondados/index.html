@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            display: block;
+            gap: 1em;
+            box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.658);
+        }
+        nav > a {
+            color: white;
+        }
+
+        .amarelo > p {
+            margin: 0;
+        }
+
+        .verde > p {
+            margin: 0;
+        }
+        .roxo > p {
+            margin: 0;
+        }
+        .azul > p {
+            margin: 0;
+        }
+        
+        .amarelo {
+            background-color: rgb(165, 165, 1);
+            border-radius: 20px 5px 30px 0px;
+
+        }
+        .verde {
+            background-color: green;
+            border-radius: 200px 3px 50px 30px;
+        }
+        .roxo {
+            background-color: blueviolet;
+            border-radius: 30px 15px;
+        }
+        .azul {
+            background-color: rgb(7, 87, 192);
+            border-radius: 100px 40px 33px 50px;
+        }
+        .bola {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="amarelo">
+        <p>Header tem a cor amarela</p>
+        <h1>Meu site</h1>
+       <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <div class="verde">
+            <section id="assuntos">
+                <p>Section tem a cor verde</p>
+            </section>
+            <section id="noticias">
+                    <p>Aside</p>
+                        <aside>
+                            <h2>Border Radius</h2>
+                            <p>No border radius, quando escrito com valores diferentes para os 4 cantos da borda, os ângulos são nesta ordem: <code><strong>superior esquerdo -> superior direito -> inferior direito -> inferior esquerdo</strong></code></p>
+                        </aside>
+            </section>
+        </div>
+        <article class="roxo">
+            <p>Article tem a cor roxa</p>
+            <h2>Com dois parâmetros</h2>
+            <p>Se apenas usar dois valores, como em <code>border-radius: 30px 15px;</code>, o primeiro valor corresponde ao ângulo superior esquerdo e inferior direito (1 e 3), e o segundo valore corresponde ao ângulo superior direito e inferior esquerdo (2 e 4)</p>
+        </article>
+    </main>
+    <footer class="azul">
+        <p>Footer tem a cor azul</p>
+        <h1>Título</h1>
+        <p>É possível fazer uma bola ao criar um quadrado com mesma altura e largura, dar um background-color e adicionar o valor da border-radius como 50%.</p>
+        <div class="bola">
+
+        </div>
+    </footer>

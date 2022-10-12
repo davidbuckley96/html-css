@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Raleway';
+            src: url('fontes/Raleway-VariableFont_wght.ttf');
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        h1 {
+            font-family: 'Raleway';
+            font-size: 1.88em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>É necessário adicionar uma regra com o código
+        <pre><code>
+@font-face {
+    font-family: 'Raleway';
+    src: url('fontes/Raleway-VariableFont_wght.ttf');
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+         </code></pre>
+    para que a fonte baixada seja adicionada corretamente.</p>
+    <p>Usa-se um nome qualquer para nomear a fonte ('Raleway', nesse caso), depois coloca-se a url com o nome do arquivo e a extensão correta (atenção ao nível das pastas onde essas fontes se encontram), e depois basta, no estilo, referenciar a fonte com o nome dado</p>
+    <p>As extensões dos arquivos de fontes podem ser truetype font (.ttf), opentype font (.otf), embedded-opentype, truetype-aat (Apple Advanced Typography), e .svg</p>
+</body>
+</html>

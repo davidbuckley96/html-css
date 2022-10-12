@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes</title>
+    <style>
+        body {
+            background-image: linear-gradient(to top, #2B9EB3, #8340A0);
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Gradientes/Degradê</h1>
+        <p>Para fazer gradientes, não utiliza-se a propriedade background-color, mas sim background-image, mesmo que o fundo não seja um arquivo de imagem em si.
+        O código fica assim:
+        <pre>
+        <code>
+        body {
+        background-image:
+        linear-gradient(to [direção desejada] right, #2B9EB3, #8340A0);
+        }
+        </code>
+        </pre>
+        </p>
+        <p>No gradiente linear, indica-se primeiro a direção, e em seguida quantas cores queremos. </p>
+        <p>Caso a direção seja para cima, escrevemos <code>linear-gradient(to top)</code>, mas ficará zebrada, listrada, e não é o que queremos. <strong>Para resolver isso, usamos uma configuração global (o atalho de configuração global é <em>* { }</em> )</strong></p>
+    </div>
+</body>
+</html>
