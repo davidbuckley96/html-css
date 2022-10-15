@@ -50,7 +50,7 @@ div.quadrado{
 #body1 {
     background-image: url('imagens/wallpaper001.jpg');
 }
-body{
+#body2 {
     background-image: url('imagens/wallpaper001.jpg');
     background-size: 100px 100px;
     background-repeat: repeat;
